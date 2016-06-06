@@ -1,0 +1,21 @@
+# Site settings
+title: Rebooting my life
+header-img: img/home-bg.png
+email: bruce.molina.81@gmail.com
+copyright_name: bmolina-nyc
+description: > # this means to ignore newlines until "baseurl:"
+  My fight to find that place that I belong
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  bmolina-nyc
+learn_profile: bmolina-nyc
+email_username: bruce.molina.81@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
