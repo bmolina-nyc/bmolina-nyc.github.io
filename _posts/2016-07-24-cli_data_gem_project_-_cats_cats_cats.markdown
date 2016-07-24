@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CLI Data Gem Project - cats cats cats"
-date:   2016-07-24 22:27:55 +0000
+date:   2016-07-24 18:27:55 -0400
 ---
 
 This project like all recent Learn projects for me have taken a bit longer than I would like but once I get into it, I can usually make very good and meaninful progress. Cursed 9-5 job!  Anyways, for my Gem - I currently have the CLI running cleanly and scraping a list of the first 8 cats from the homepage of adoptable cats listed on the ASPCA website http://www.aspca.org/
@@ -22,5 +22,9 @@ Scraping takes the longest time and thte biggest bugs I found with this program 
 cat.story = doc.css("div.field.field-name-body.field-type-text-with-summary.field-label-hidden").css("div.field-item.even").css("p")[1..5].text 
 
 and then gsub out the unncessary paragraphs so that the paragraphs remained uniform across all cats.
+
+So there are 10 total cats on the index page, separated into left and right divs so grabbing each url required me to do a simple while loop where i could iterate and collect each url.
+
+I stopped at 8 and not 10 because as I mentioned, not every cat has the same info - One cat in particular had no biographical information at all so the above code for grabbing a story would break on his nil paragraph tags.  In the interest of continuing a forward march, I stopped iterating at 8 cat object creations.
 
 I like how Avi approaches the program.  It really is important to stop trying to make determinations on code with information I don't have. Starting with the bin and executable files as well as the command line really helped to keep me on track and progressing on this lab.  Also good in this lab was the reinforcement of basic github commands in my memory as it is really one of the first labs in the program where you need to push your own commits without using "learn" as a shortcut. I look forward to the refactor and any other ways of tightening this thing up!
