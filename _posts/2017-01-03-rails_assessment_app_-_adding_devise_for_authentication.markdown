@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rails Assessment App - Adding Devise for Authentication"
-date:   2017-01-03 03:01:28 +0000
+date:   2017-01-02 22:01:29 -0500
 ---
 
 
