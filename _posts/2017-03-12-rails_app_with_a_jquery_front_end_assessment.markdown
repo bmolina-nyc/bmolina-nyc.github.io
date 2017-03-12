@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rails App with a jQuery Front End Assessment"
-date:   2017-03-12 17:48:08 +0000
+date:   2017-03-12 13:48:08 -0400
 ---
 
 I am finished with this assessment and about ready to venture into the final modules of the Learn curriculum - React and Redux.
